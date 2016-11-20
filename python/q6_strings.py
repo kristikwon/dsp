@@ -18,6 +18,12 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
+    if count>0:
+        if count<10:
+            print "Number of donuts: %s" % (count)
+        else:
+            print "Number of donuts: %s" %("many")
+            
     raise NotImplementedError
 
 
@@ -37,6 +43,11 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
+    if len(s)<2:
+        print ""
+    else:
+        print s[:2]+s[-2:]
+        
     raise NotImplementedError
 
 
@@ -56,6 +67,14 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
+    find = s[0]
+    new_s = s[0]
+    for letter in range(1,len(s)):
+        if s[letter]==find:
+            new_s += "*"
+        else:
+            new_s += s[letter]
+    print new_s
     raise NotImplementedError
 
 
@@ -74,6 +93,7 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
+    print b[:2]+a[2:]+" "+a[:2]+b[2:]
     raise NotImplementedError
 
 
@@ -91,6 +111,12 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
+    if len(s)>=3:
+        if s[-3:]=="ing":
+            s+="ly"
+        else:
+            s+="ing"
+    print s
     raise NotImplementedError
 
 
@@ -111,12 +137,18 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
+    first_not = s.find("not")
+    first_bad = s.find("bad")
+    if first_bad > first_not:
+        print s[:first_not] + "good" + s[first_bad+3:]
+    else:
+        print s
     raise NotImplementedError
 
-
+import math
 def front_back(a, b):
     """
-    Consider dividing a string into two halves. If the length is even,
+    Consider dividing a string into two halves. If the length is even,  
     the front and back halves are the same length. If the length is
     odd, we'll say that the extra char goes in the front half. e.g.
     'abcde', the front half is 'abc', the back half 'de'. Given 2
@@ -130,4 +162,10 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
+    a_front = a[:int(math.ceil(len(a)/2.0))]
+    b_front = b[:int(math.ceil(len(b)/2.0))]
+    a_back = a[int(math.ceil(len(a)/2.0)):]
+    b_back = b[int(math.ceil(len(b)/2.0)):]
+
+    print a_front+b_front+a_back+b_back
     raise NotImplementedError
