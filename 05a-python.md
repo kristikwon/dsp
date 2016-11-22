@@ -12,7 +12,10 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Similar: values can be any type, and they are indexed by integers
+Different: lists are mutable. Tuples are immutable
+Lists cannot be keys because keys have to be hashable. Python hashes the key and stores it in the corresponding location (for the key-value pair). But when the key is modified and hashed again, then it would go to a different location. Then the system may be unable to find a key or there may be multiple entries for the same key. 
+
 
 ---
 
@@ -36,7 +39,32 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions are constructs that allow sequences to be built from other sequences. They result in the same list of values, but the line of code is more readable using the list comprehensions.
+
+Examples: 
+*List comprehension*
+  Print out evens from 0-5:
+    ```python
+		numbers = range[5]
+		odd1 = map(lambda x: x, filter(lambda x: x%2==0, numbers))
+		odd2 = [x for x in numbers if x%2==0]
+    ```
+  Print out cubes from 0-10 that are under 100:
+  ```python
+		cube1 = map(lambda x: x**3, filter(lambda x: x**3<100, range[10]))
+		cube2 = [x**3 for x in range[10] if x**3<100]
+    ```
+*Dictionary comprehension*
+	Swap key and value: 
+  ```python 
+  {value:key for key, value in a_dict.items()}
+  ```
+*Set comprehension*
+	Print evens under 10 that are divisible by 3:
+  ```python
+	{x for x in range(1:10) if x%3==0 and x%2==0}
+  ```
+
 
 ---
 
@@ -51,7 +79,7 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 937
 
 b.  
 ```
@@ -59,7 +87,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 513
 
 c.  
 ```
@@ -67,7 +95,8 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
+>> 7850
+
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
