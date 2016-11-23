@@ -23,20 +23,20 @@ Lists cannot be keys because keys have to be hashable. Python hashes the key and
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
 >> Both contain values, and supports the following format: "x in set”, “len(set)”, “for x in set”. But sets are immutable. Sets also do not support indexing, slicing, or other sequence-like behavior, but support mathematical operations like union, intersection, difference, and symmetric difference. Sets are unordered collection of unique elements, while lists are ordered/indiced and allow duplicates. To find an item in a set, set performs much quicker (especially with a large dataset) because a hash look up is used, so a look up for a value happens in a constant time. On the other hand, list has to go through the values in the list sequentially to find if the value exists.
-Example of set:
+>> Example of set:
 ```python
-from sets import Set
-
-animal = set([‘bat’, ‘cat’, ‘chicken’, ‘dog’, ‘butterfly’, ‘whale’])
-winged = set([‘bat’, ‘chicken’, ‘butterfly’])
-mammal = set([‘bat’, ‘whale’, ‘dog’, ‘cat’])
-bird = set([‘chicken’])
-
-print winged & mammal # Returns: set([‘bat’])
-print animal – mammal # Returns: set([‘chicken’,’butterfly’])
-print ‘dog’ in winged # Returns: False
+>> from sets import Set
+>>
+>> animal = set([‘bat’, ‘cat’, ‘chicken’, ‘dog’, ‘butterfly’, ‘whale’])
+>> winged = set([‘bat’, ‘chicken’, ‘butterfly’])
+>> mammal = set([‘bat’, ‘whale’, ‘dog’, ‘cat’])
+>> bird = set([‘chicken’])
+>> 
+>> print winged & mammal #Returns: set([‘bat’])
+>> print animal – mammal #Returns: set([‘chicken’,’butterfly’])
+>> print ‘dog’ in winged #Returns: False
 ```
-Example of using both list and set:
+>> Example of using both list and set:
 ```python
 #prints unique list of numbers in the list
 num_list = [1,2,3,3,4,6,6,6]
