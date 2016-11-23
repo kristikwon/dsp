@@ -59,31 +59,29 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
 >> List comprehensions are constructs that allow sequences to be built from other sequences. They result in the same list of values, but the line of code is more readable using the list comprehensions.
-
-Examples: 
-*List comprehension*
-  Print out evens from 0-5:
-    ```python
-		numbers = range[5]
-		odd1 = map(lambda x: x, filter(lambda x: x%2==0, numbers))
-		odd2 = [x for x in numbers if x%2==0]
-    ```
-  Print out cubes from 0-10 that are under 100:
-  ```python
-		cube1 = map(lambda x: x**3, filter(lambda x: x**3<100, range[10]))
-		cube2 = [x**3 for x in range[10] if x**3<100]
-    ```
-*Dictionary comprehension*
-	Swap key and value: 
-  ```python 
-  {value:key for key, value in a_dict.items()}
-  ```
-*Set comprehension*
-	Print evens under 10 that are divisible by 3:
-  ```python
-	{x for x in range(1:10) if x%3==0 and x%2==0}
-  ```
-
+>> Examples: 
+>> *List comprehension*
+>> Print out evens from 0-5:
+```python
+numbers = range[5]
+odd1 = map(lambda x: x, filter(lambda x: x%2==0, numbers))
+odd2 = [x for x in numbers if x%2==0]
+```
+>> Print out cubes from 0-10 that are under 100:
+```python
+cube1 = map(lambda x: x**3, filter(lambda x: x**3<100, range[10]))
+cube2 = [x**3 for x in range[10] if x**3<100]
+```
+>> *Dictionary comprehension*
+>> Swap key and value: 
+```python 
+{value:key for key, value in a_dict.items()}
+```
+>> *Set comprehension*
+>> Print evens under 10 that are divisible by 3:
+```python
+x for x in range(1:10) if x%3==0 and x%2==0}
+```
 
 ---
 
