@@ -12,8 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> Similar: values can be any type, and they are indexed by integers
-Different: lists are mutable. Tuples are immutable
+>> Both values can be any type, and they are indexed by integers. But lists are mutable. Tuples are immutable
 Lists cannot be keys because keys have to be hashable. Python hashes the key and stores it in the corresponding location (for the key-value pair). But when the key is modified and hashed again, then it would go to a different location. Then the system may be unable to find a key or there may be multiple entries for the same key. 
 
 
@@ -23,7 +22,27 @@ Lists cannot be keys because keys have to be hashable. Python hashes the key and
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Both contain values, and supports the following format: "x in set”, “len(set)”, “for x in set”. But sets are immutable. Sets also do not support indexing, slicing, or other sequence-like behavior, but support mathematical operations like union, intersection, difference, and symmetric difference. Sets are unordered collection of unique elements, while lists are ordered/indiced and allow duplicates. To find an item in a set, set performs much quicker (especially with a large dataset) because a hash look up is used, so a look up for a value happens in a constant time. On the other hand, list has to go through the values in the list sequentially to find if the value exists.
+Example of set:
+```python
+from sets import Set
+
+animal = set([‘bat’, ‘cat’, ‘chicken’, ‘dog’, ‘butterfly’, ‘whale’])
+winged = set([‘bat’, ‘chicken’, ‘butterfly’])
+mammal = set([‘bat’, ‘whale’, ‘dog’, ‘cat’])
+bird = set([‘chicken’])
+
+print winged & mammal # Returns: set([‘bat’])
+print animal – mammal # Returns: set([‘chicken’,’butterfly’])
+print ‘dog’ in winged # Returns: False
+```
+Example of using both list and set:
+```python
+#prints unique list of numbers in the list
+num_list = [1,2,3,3,4,6,6,6]
+for n in sorted(set(num_list)):
+	print n
+```
 
 ---
 
@@ -31,7 +50,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lambda is a shorthand to create anonymous functions, and the expression yields a function object. Unnamed object behaves like a function object. Expression “lambda arguments: expression” is equivalent to “def name(arguments):\n\treturn expression”. The following example sorts a list by the second index: sorted(given_list, key = lambda x: x[1])
 
 ---
 
