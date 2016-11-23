@@ -63,7 +63,7 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 >> Examples:
 
->> *List comprehension*
+>> *List Comprehension*
 
 >> Print out evens from 0-5:
 ```python
@@ -76,13 +76,13 @@ odd2 = [x for x in numbers if x%2==0]
 cube1 = map(lambda x: x**3, filter(lambda x: x**3<100, range[10]))
 cube2 = [x**3 for x in range[10] if x**3<100]
 ```
->> *Dictionary comprehension*
+>> *Dictionary Comprehension*
 
 >> Swap key and value:
 ```python 
 {value:key for key, value in a_dict.items()}
 ```
->> *Set comprehension*
+>> *Set Comprehension*
 
 >> Print evens under 10 that are divisible by 3:
 ```python
