@@ -22,7 +22,8 @@ Lists cannot be keys because keys have to be hashable. Python hashes the key and
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> Both contain values, and supports the following format: "x in set”, “len(set)”, “for x in set”. But sets are immutable. Sets also do not support indexing, slicing, or other sequence-like behavior, but support mathematical operations like union, intersection, difference, and symmetric difference. Sets are unordered collection of unique elements, while lists are ordered/indiced and allow duplicates. To find an item in a set, set performs much quicker (especially with a large dataset) because a hash look up is used, so a look up for a value happens in a constant time. On the other hand, list has to go through the values in the list sequentially to find if the value exists.\n
+>> Both contain values, and supports the following format: "x in set”, “len(set)”, “for x in set”. But sets are immutable. Sets also do not support indexing, slicing, or other sequence-like behavior, but support mathematical operations like union, intersection, difference, and symmetric difference. Sets are unordered collection of unique elements, while lists are ordered/indiced and allow duplicates. To find an item in a set, set performs much quicker (especially with a large dataset) because a hash look up is used, so a look up for a value happens in a constant time. On the other hand, list has to go through the values in the list sequentially to find if the value exists.
+
 >> Example of set:
 ```python
 >> from sets import Set
@@ -58,9 +59,12 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> List comprehensions are constructs that allow sequences to be built from other sequences. They result in the same list of values, but the line of code is more readable using the list comprehensions.\n
->> Examples:\n
->> *List comprehension*\n
+>> List comprehensions are constructs that allow sequences to be built from other sequences. They result in the same list of values, but the line of code is more readable using the list comprehensions.
+
+>> Examples:
+
+>> *List comprehension*
+
 >> Print out evens from 0-5:
 ```python
 numbers = range[5]
@@ -72,12 +76,14 @@ odd2 = [x for x in numbers if x%2==0]
 cube1 = map(lambda x: x**3, filter(lambda x: x**3<100, range[10]))
 cube2 = [x**3 for x in range[10] if x**3<100]
 ```
->> *Dictionary comprehension*\n
+>> *Dictionary comprehension*
+
 >> Swap key and value:
 ```python 
 {value:key for key, value in a_dict.items()}
 ```
->> *Set comprehension*\n
+>> *Set comprehension*
+
 >> Print evens under 10 that are divisible by 3:
 ```python
 x for x in range(1:10) if x%3==0 and x%2==0}
