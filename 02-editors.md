@@ -71,17 +71,17 @@ What graphical editor will you use? How did you make your decision? What are som
 >> I will be using Sublime. Sublime is popular, and is a powerful tool for Python users. It has many plug-ins and add-ons for Python, search and go-to features, many mouse-free keyboard commands, and distraction-free mode. Changing settings is also very easy through command palette. 
 
 >> Some useful keyboard shortcuts are:
-F11: full screen\n
-Shift+F11: distraction free mode\n
-Ctrl+shift+p: commang palette
-Ctrl+k+b: show/hide sidebar
-  Ctrl+/: comment
-  Ctrl+shift+/: block comment
-  Ctrl+g: go to line number
-  Ctrl+m: go to matching bracket
-  Ctrl+l: select line
-  Ctrl+shift+d: duplicate line
-  Ctrl+f then alt+enter: find a certain term then select them all for multi-editing
+>>  F11: full screen
+>>  Shift+F11: distraction free mode\n
+>>  Ctrl+shift+p: commang palette
+>>  Ctrl+k+b: show/hide sidebar
+>>  Ctrl+/: comment
+>>  Ctrl+shift+/: block comment
+>>  Ctrl+g: go to line number
+>>  Ctrl+m: go to matching bracket
+>>  Ctrl+l: select line
+>>  Ctrl+shift+d: duplicate line
+>>  Ctrl+f then alt+enter: find a certain term then select them all for multi-editing
 
 >> To customize, I can either download packages/themes, or go into menus (preferences > color) to change color scheme. For more customize settings, I can get to my user settings by using command palette (ctrl+ shift+ p) and typing in user.  
  
