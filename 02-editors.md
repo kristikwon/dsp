@@ -60,7 +60,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I will be using Emacs. I wanted to use a popular editor (Vim or Emacs), but I came across multiple sources stating that Vim has a steep learning curve. I would need to master Vim to use it efficiently to its full extent. I also read how Emacs has interaction with asynchronous subprocesses (you can do something else inside the same editor instance while a long compiler is churning), which is a feature not found in Vim.
 
 --
 
@@ -68,6 +68,20 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I will be using Sublime. Sublime is popular, and is a powerful tool for Python users. It has many plug-ins and add-ons for Python, search and go-to features, many mouse-free keyboard commands, and distraction-free mode. Changing settings is also very easy through command palette. 
 
+Some useful keyboard shortcuts are:
+F11: full screen
+Shift+F11: distraction free mode
+Ctrl+shift+p: commang palette
+Ctrl+k+b: show/hide sidebar
+Ctrl+/: comment
+Ctrl+shift+/: block comment
+Ctrl+g: go to line number
+Ctrl+m: go to matching bracket
+Ctrl+l: select line
+Ctrl+shift+d: duplicate line
+Ctrl+f then alt+enter: find a certain term then select them all for multi-editing
+
+To customize, I can either download packages/themes, or go into menus (preferences > color) to change color scheme. For more customize settings, I can get to my user settings by using command palette (ctrl+ shift+ p) and typing in user.  
  
