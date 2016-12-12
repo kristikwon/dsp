@@ -54,7 +54,12 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+   - `ls -ls`: lists with long format with file size
+   - `ls -c`: lists by timestamp
+   - `ls -u`: displays files by the file access time
+   - `ls -x`: displays files as rows across the screen
+   - `ls -ltr`: list files sorted by the last time they were modified in reverse order
 
 ---
 
@@ -62,7 +67,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `xargs` builds/reads and executes the command one or more times from standard input. `find /tmp -name "*.tmp" | xargs rm` command will remove all temporary files from /tmp.
 
  
 
