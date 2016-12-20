@@ -5,7 +5,7 @@
 4. find how many diff email domains there are. print list of unique email domains
 '''
 
-import pandas as pd 
+import pandas as pd
 
 def read_data():
 	faculty = pd.read_csv('faculty.csv')
@@ -19,8 +19,7 @@ def n_degree(df):
 
 	# need to do some data cleaning first
 	for i in range(0,len(df)):
-		degree_clean = df[' degree'][i].replace('.','')
-		degree_clean = df[' degree'][i].split()
+		degree_clean = df[' degree'][i].replace('.','').split()
 	
 		# count the number of degrees
 		for j in range(0,len(degree_clean)):
@@ -30,7 +29,6 @@ def n_degree(df):
 				d[degree_clean[j]] += 1
 	return d
 
-
 def n_title(df):
 	# df = DataFrame
 	# create a dictionary of degrees
@@ -38,8 +36,7 @@ def n_title(df):
 
 	# data cleaning
 	for i in range(0,len(df)):
-		title_clean = df[' title'][i].replace(' of Biostatistics','')
-		title_clean = title_clean.replace(' is Biostatistics','')
+		title_clean = df[' title'][i].replace(' of Biostatistics','').replace(' is Biostatistics','')
 		if title_clean not in d:
 			d[title_clean] = 1
 		else:
@@ -55,6 +52,7 @@ def email_address(df):
 	return email_list
 
 
+#4. find how many diff email domains there are. print list of unique email domains
 def n_email_domain(df):
 	# df = DataFrame
 	# create a dictionary of email-domains
@@ -70,6 +68,8 @@ def n_email_domain(df):
 	return d
 
 
+
+	
 #Q1
 print n_degree(read_data())
 #Q2
