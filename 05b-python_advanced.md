@@ -19,7 +19,7 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 ####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
->> {'MD': 1, 'MA': 1, 'Sc.D.': 4, 'Ph.D.': 17, 'M.S.': 1, 'MPH': 2, 'PhD': 9, '0': 1, 'Ph.D': 5, 'MS': 1, 'ScD': 2, 'JD': 1, 'B.S.Ed.': 1}
+>> {'MD': 1, 'MA': 1, 'ScD': 6, 'BSEd': 1, 'PhD': 31, '0': 1, 'MPH': 2, 'MS': 2, 'JD': 1}
 
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
@@ -66,7 +66,9 @@ faculty_dict = { 'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['P
 ```
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> Bellamy: [['Sc.D.', 'Associate Professor', 'bellamys@mail.med.upenn.edu']]
+   Bilker: [['Ph.D.', 'Professor', 'warren@upenn.edu']]
+   Bryan: [['PhD', 'Assistant Professor', 'bryanma@upenn.edu']]
 
 ####Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 
@@ -76,11 +78,49 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> ('Alisa', 'Stephens'): [['Ph.D.', 'Assistant Professor', 'alisaste@mail.med.upenn.edu']]
+   ('Andrea', 'Troxel'): [['ScD', 'Professor', 'atroxel@mail.med.upenn.edu']]
+   ('Benjamin', 'French'): [['PhD', 'Associate Professor', 'bcfrench@mail.med.upenn.edu']]
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Print out the dictionary key value pairs based on alphabetical orders of the last name of the professors
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> ('Bellamy', 'Scarlett'): [['Sc.D.', 'Associate Professor', 'bellamys@mail.med.upenn.edu']]
+('Bilker', 'Warren'): [['Ph.D.', 'Professor', 'warren@upenn.edu']]
+('Bryan', 'Matthew'): [['PhD', 'Assistant Professor', 'bryanma@upenn.edu']]
+('Chen', 'Jinbo'): [['Ph.D.', 'Associate Professor', 'jinboche@upenn.edu']]
+('Ellenberg', 'Jonas'): [['Ph.D.', 'Professor', 'jellenbe@mail.med.upenn.edu']]
+('Ellenberg', 'Susan'): [['Ph.D.', 'Professor', 'sellenbe@upenn.edu']]
+('Feng', 'Rui'): [['Ph.D', 'Assistant Professor', 'ruifeng@upenn.edu']]
+('French', 'Benjamin'): [['PhD', 'Associate Professor', 'bcfrench@mail.med.upenn.edu']]
+('Gimotty', 'Phyllis'): [['Ph.D', 'Professor', 'pgimotty@upenn.edu']]
+('Guo', 'Wensheng'): [['Ph.D', 'Professor', 'wguo@mail.med.upenn.edu']]
+('Hsu', 'Yenchih'): [['Ph.D.', 'Assistant Professor', 'hsu9@mail.med.upenn.edu']]
+('Hubbard', 'Rebecca'): [['PhD', 'Associate Professor', 'rhubb@mail.med.upenn.edu']]
+('Hwang', 'Wei-Ting'): [['Ph.D.', 'Associate Professor', 'whwang@mail.med.upenn.edu']]
+('Joffe', 'Marshall'): [['MD MPH Ph.D', 'Professor', 'mjoffe@mail.med.upenn.edu']]
+('Landis', 'Richard'): [['B.S.Ed. M.S. Ph.D.', 'Professor', 'jrlandis@mail.med.upenn.edu']]
+('Li', 'Hongzhe'): [['Ph.D', 'Professor', 'hongzhe@upenn.edu']]
+('Li', 'Mingyao'): [['Ph.D.', 'Associate Professor', 'mingyao@mail.med.upenn.edu']]
+('Li', 'Yimei'): [['Ph.D.', 'Assistant Professor', 'liy3@email.chop.edu']]
+('Localio', 'Russell'): [['JD MA MPH MS PhD', 'Associate Professor', 'rlocalio@upenn.edu']]
+('Mitra', 'Nandita'): [['Ph.D.', 'Associate Professor', 'nanditam@mail.med.upenn.edu']]
+('Morales', 'Knashawn'): [['Sc.D.', 'Associate Professor', 'knashawn@mail.med.upenn.edu']]
+('Propert', 'Kathleen'): [['Sc.D.', 'Professor', 'propert@mail.med.upenn.edu']]
+('Putt', 'Mary'): [['PhD ScD', 'Professor', 'mputt@mail.med.upenn.edu']]
+('Ratcliffe', 'Sarah'): [['Ph.D.', 'Associate Professor', 'sratclif@upenn.edu']]
+('Ross', 'Michelle'): [['PhD', 'Assistant Professor', 'michross@upenn.edu']]
+('Roy', 'Jason'): [['Ph.D.', 'Associate Professor', 'jaroy@mail.med.upenn.edu']]
+('Sammel', 'Mary'): [['Sc.D.', 'Professor', 'msammel@cceb.med.upenn.edu']]
+('Shaw', 'Pamela'): [['PhD', 'Assistant Professor', 'shawp@upenn.edu']]
+('Shinohara', 'Russell'): [['0', 'Assistant Professor', 'rshi@mail.med.upenn.edu']]
+('Shou', 'Haochang'): [['Ph.D.', 'Assistant Professor', 'hshou@mail.med.upenn.edu']]
+('Shults', 'Justine'): [['Ph.D.', 'Professor', 'jshults@mail.med.upenn.edu']]
+('Stephens', 'Alisa'): [['Ph.D.', 'Assistant Professor', 'alisaste@mail.med.upenn.edu']]
+('Troxel', 'Andrea'): [['ScD', 'Professor', 'atroxel@mail.med.upenn.edu']]
+('Xiao', 'Rui'): [['PhD', 'Assistant Professor', 'rxiao@mail.med.upenn.edu']]
+('Xie', 'Dawei'): [['PhD', 'Assistant Professor', 'dxie@upenn.edu']]
+('Xie', 'Sharon'): [['Ph.D.', 'Associate Professor', 'sxie@mail.med.upenn.edu']]
+('Yang', 'Wei'): [['Ph.D.', 'Assistant Professor', 'weiyang@mail.med.upenn.edu']]
 
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 
