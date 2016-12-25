@@ -2,6 +2,7 @@
 
 >> 
 **Python Code:
+
 ```python
 
 """This file contains code used in "Think Stats",
