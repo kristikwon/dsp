@@ -70,4 +70,4 @@ if __name__ == '__main__':
     import sys
     main(*sys.argv)
 ```
-Difference of mean weight between first babies and other babies is -0.125 pounds. Cohen's _d_ indiciates that the difference between the two groups is -0.0887 standard deviations, which shows that first babies are slightly lighter than others. This difference is 3 times larger than the difference in mean pregnancy length, which is 0.029 standard deviations. 
+>> Difference of mean weight between first babies and other babies is -0.125 pounds. Cohen's _d_ indiciates that the difference between the two groups is -0.0887 standard deviations, which shows that first babies are slightly lighter than others. This difference is 3 times larger than the difference in mean pregnancy length, which is 0.029 standard deviations. 
