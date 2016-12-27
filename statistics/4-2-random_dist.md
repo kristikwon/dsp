@@ -33,6 +33,6 @@ cdf = thinkstats2.Cdf(random_list)
 thinkplot.Cdf(cdf, label = 'CDF')
 thinkplot.Show()
 ```
-<img src="statistics/stat_4_2_pmf.png">
-<img src="statistics/stat_4_2_cdf.png">
+<img src="/statistics/stat_4_2_pmf.png">
+<img src="/statistics/stat_4_2_cdf.png">
 >> From the PMF graph above, it's difficult to tell whether the distribution is uniform. But the straight, diagonal line of CDF graph indicates that the distribution is uniform. Any same increment of values between 0 and 1 are equally likely to be generated.
