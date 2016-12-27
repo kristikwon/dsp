@@ -72,4 +72,4 @@ print 'biased mean', biased_pmf.Mean()
 ```
 
 >> Actual mean: 1.02 children; Biased mean: 2.40 children
-[<img src="/users/kristi/documents/stat_3_1_fig1.png">]
+[<img src="/statistics/stat_3_1_fig1.png">]
