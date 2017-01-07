@@ -86,7 +86,17 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Frequentist:
+- Data are a repeatable random sample. There is a frequency and studies are repeatable
+- Underlying parameter remain constant during this repeatable process
+- Parameters are fixed
+
+>> Bayesian:
+- Data are observed from the realized sample. Studies are fixed
+- Parameters are unknown and described probabilistically
+- Data are fixed
+- Update of prior distribution of the parameter with the data
+
 
 ---
 
