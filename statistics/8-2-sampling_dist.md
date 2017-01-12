@@ -39,7 +39,6 @@ def Estimate(n,m,lam):
 	thinkplot.Cdf(cdf)
 	pyplot.plot([CI[0],CI[0]],[0,1], color = '0.8')
 	pyplot.plot([CI[1],CI[1]],[0,1], color = '0.8')
-	pyplot.show()
 	thinkplot.Save(root = 'stat_8_2_n%d' %(n),
 				   formats = ['png'],
 				   xlabel='sample mean', ylabel='CDF')
